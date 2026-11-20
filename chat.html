@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support | Arman Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="admin-header">
+    <a href="index.html" class="logo">ARMAN<span>STORE.</span></a>
+    <a href="index.html">Back to Store</a>
+  </header>
+
+  <main class="chat-layout">
+    <section class="admin-panel">
+      <h1>Chat with Admin</h1>
+      <p id="chatStatus">Checking login...</p>
+
+      <div id="messages" class="chat-box"></div>
+
+      <form id="chatForm" class="chat-form">
+        <input id="messageInput" type="text" maxlength="1000"
+          placeholder="Write your message..." required>
+        <button class="primary-button" type="submit">Send</button>
+      </form>
+      <p><a href="login.html">Login / Signup</a></p>
+    </section>
+  </main>
+
+  <script type="module" src="chat.js"></script>
+</body>
+</html>

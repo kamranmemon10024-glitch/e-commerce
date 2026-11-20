@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Arman Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="auth-wrapper">
+    <section class="auth-card">
+      <a href="index.html" class="logo">ARMAN<span>STORE.</span></a>
+      <h1 id="formTitle">Welcome Back</h1>
+      <p id="formDescription">Login to your account to continue.</p>
+
+      <form id="authForm">
+        <input id="email" type="email" placeholder="Email address" required>
+        <input id="password" type="password" placeholder="Password (minimum 6 characters)" minlength="6" required>
+        <button class="primary-button" id="submitButton" type="submit">Login</button>
+      </form>
+
+      <p id="authMessage" class="message" role="status"></p>
+
+      <p style="margin-top:18px">
+        <span id="toggleText">Don't have an account?</span>
+        <button id="toggleMode" type="button" class="secondary-button">Create account</button>
+      </p>
+
+      <p style="margin-top:16px"><a href="index.html">← Back to Store</a></p>
+    </section>
+  </main>
+
+  <script type="module" src="login.js"></script>
+</body>
+</html>

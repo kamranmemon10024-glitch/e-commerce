@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arman Store | Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">Welcome to Arman Store — Shop your favourites!</div>
+
+  <header class="navbar">
+    <a class="logo" href="index.html">ARMAN<span>STORE.</span></a>
+
+    <form id="searchForm" class="search-box">
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      <button type="submit">Search</button>
+    </form>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="login.html" id="accountLink">Login</a>
+      <a href="chat.html">Chat</a>
+      <button id="cartButton" class="cart-button" type="button">
+        Cart (<span id="cartCount">0</span>)
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR EVERYDAY SHOPPING DESTINATION</span>
+        <h1>Find Your Favourite Products.</h1>
+        <p>Discover quality products, explore new collections and enjoy shopping with Arman Store.</p>
+        <a class="primary-button" href="#products">Shop Now →</a>
+      </div>
+
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
+        alt="Modern retail store"
+      >
+    </section>
+
+    <section class="benefits">
+      <article><span>🚚</span><h3>Easy Shopping</h3><p>Browse products with ease.</p></article>
+      <article><span>🛍️</span><h3>Quality Products</h3><p>Explore our product collection.</p></article>
+      <article><span>💬</span><h3>Customer Support</h3><p>Chat with our admin for help.</p></article>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading">
+        <div><span class="eyebrow">EXPLORE</span><h2>Shop by Category</h2></div>
+      </div>
+      <div id="categoryList" class="category-list">
+        <button class="category-chip active" data-category="all">All Products</button>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <div><span class="eyebrow">OUR COLLECTION</span><h2>Featured Products</h2></div>
+        <p>Find something you love.</p>
+      </div>
+      <div id="productsContainer" class="product-grid">
+        <p>Loading products...</p>
+      </div>
+    </section>
+
+    <section class="cart-section section" id="cartSection">
+      <div class="section-heading">
+        <div><span class="eyebrow">YOUR SHOPPING</span><h2>My Cart</h2></div>
+        <button id="clearCart" class="secondary-button" type="button">Clear Cart</button>
+      </div>
+
+      <div id="cartItems" class="cart-items">Your cart is empty.</div>
+
+      <div class="cart-summary">
+        <h3>Total: Rs. <span id="cartTotal">0</span></h3>
+        <button id="checkoutButton" class="primary-button" type="button">Proceed to Checkout</button>
+      </div>
+      <p id="checkoutMessage" class="message"></p>
+    </section>
+
+    <section class="support-banner">
+      <div>
+        <span class="eyebrow">NEED HELP?</span>
+        <h2>We're here to help you.</h2>
+        <p>Contact our admin for questions about products and orders.</p>
+      </div>
+      <a href="chat.html" class="primary-button">Chat with Admin →</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">ARMAN<span>STORE.</span></a>
+    <p>Your online shopping destination.</p>
+    <div><a href="#home">Home</a> · <a href="#products">Products</a> · <a href="login.html">Account</a> · <a href="chat.html">Support</a></div>
+    <p>© 2026 Arman Store. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
